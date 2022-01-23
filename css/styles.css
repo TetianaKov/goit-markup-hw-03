@@ -356,6 +356,10 @@ letter-spacing: 0.03em;
     
     margin-left: 30px;
     margin-bottom: 30px;
+
+    border-radius: 0  0 4px 4px;
+    background: #EEEEEE;
+    /* outline: 2px solid green; */
 }
     
     
