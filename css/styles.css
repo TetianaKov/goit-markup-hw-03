@@ -35,6 +35,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -47,13 +49,11 @@ button {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    outline: 2px solid yellow;
+    outline: 2px solid green;
 }
 
 .header {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 .header-container {
     display: flex;
@@ -102,9 +102,6 @@ letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 .logo-studio {
     color: #000000;
@@ -169,12 +166,11 @@ letter-spacing: 0.03em;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-
-    min-width: 696px;
-    height: 120px;
-
-    margin-right: 252px;
-    margin-left: 252px;
+    text-transform: uppercase;
+    width: 696px;
+    
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
 }
 .hero-btn {
@@ -197,9 +193,13 @@ letter-spacing: 0.03em;
 }
 
 /*Преимущества*/
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .features {
     display: flex;
-    margin: 94px 0;
+    
 }
 
 .features-item {
@@ -223,7 +223,7 @@ letter-spacing: 0.03em;
 /*Наши работы*/
 .works {
     display: flex;
-    margin-bottom: 94px;
+    
     margin-left: -30px;
 }
 .section-title{
@@ -247,15 +247,18 @@ letter-spacing: 0.03em;
 .masters {
     background-color: var(--team-background);
     display: flex;
-    margin-bottom: 94px;
-    margin-left: -30px;
+}
+
+.masters-item-content {
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .masters-item {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
 }
 .masters-title {
-    margin-top: 94px;
+    
     margin-bottom: 50px;
 }
 .masters-item-title,
@@ -268,7 +271,7 @@ letter-spacing: 0.03em;
 
 }
 .masters-item-title {
-    margin-top: 30px;
+    
     margin-bottom: 10px;
     
 }
@@ -280,16 +283,18 @@ letter-spacing: 0.03em;
 
 
 /* Подвал */
+.footer {
+    background-color: #2F303A;
+}
 .footer-container {
     padding-top: 60px;
-    padding-left: 215px;
     padding-bottom: 60px;
 } 
-.adress.list {
+.adress {
     margin-top: 20px;
 }
-.adress-item {
-    padding-bottom: 9px;
+.adress-item:nth-last-child(1) {
+    margin-bottom: 9px;
 }
 .adress-link{
     color: var(--text-color);
@@ -312,8 +317,7 @@ letter-spacing: 0.03em;
 /* Фильтр */
 .filter {
     display: flex;
-    margin-left: 295px;
-    margin-top: 94px;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .button {
@@ -327,8 +331,6 @@ letter-spacing: 0.03em;
     font-weight: 500;
     line-height: 1.63;
     text-decoration: none;
-    
-    margin-bottom: 16px;
 }
 .filter-item + .filter-item {
     margin-left: 10px;
@@ -345,7 +347,7 @@ letter-spacing: 0.03em;
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: 94px;
+    margin-bottom: 30px;
 }
 .project-link {
     text-decoration: none;
@@ -353,15 +355,19 @@ letter-spacing: 0.03em;
 }
 
 .projects-content {
-    
-    margin-left: 30px;
-    margin-bottom: 30px;
-
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-radius: 0  0 4px 4px;
     background: #EEEEEE;
     /* outline: 2px solid green; */
 }
-    
+
+.project-item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
     
     
 .project-link-title {
@@ -371,14 +377,12 @@ letter-spacing: 0.03em;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-top: 20px;
+    
     
 }
 .project-link-text {
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
-    margin-left: 24px;
-    margin-bottom: 20px;
+    
 }
