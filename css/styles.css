@@ -293,7 +293,7 @@ letter-spacing: 0.03em;
 .adress {
     margin-top: 20px;
 }
-.adress-item:nth-last-child(1) {
+.adress-item:not(:last-child) {
     margin-bottom: 9px;
 }
 .adress-link{
