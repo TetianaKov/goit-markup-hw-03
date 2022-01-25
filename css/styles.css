@@ -102,6 +102,9 @@ letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
 }
 .logo-studio {
     color: #000000;
@@ -117,6 +120,10 @@ letter-spacing: 0.03em;
 }
 /*навигация*/
 .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
     color: var(--nav-color);
     font-weight: 500;
     line-height: 1.14;
@@ -153,11 +160,14 @@ letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
+.border: 1px solid #ECECEC;
+
 /*Герой*/
 .hero {
     background-color: var(--hero-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 .hero-title {
     color: #ffffff;
@@ -189,10 +199,14 @@ letter-spacing: 0.03em;
 
     padding: 10px 32px;
     justify-content: center;
-    margin-left: 500px;
+    
 }
 
 /*Преимущества*/
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -202,8 +216,7 @@ letter-spacing: 0.03em;
     
 }
 
-.features-item {
-    min-width: 270px;
+.features-item:not(:first-child) {
     margin-left: 30px;
 }
 .features-title {
@@ -223,8 +236,10 @@ letter-spacing: 0.03em;
 /*Наши работы*/
 .works {
     display: flex;
-    
     margin-left: -30px;
+}
+.works-section {
+    padding-top: 0;
 }
 .section-title{
     color: var(--title-color);
@@ -255,6 +270,9 @@ letter-spacing: 0.03em;
 }
 .masters-item {
     width: calc(100% / 4 - 30px);
+    
+}
+.masters-item:not(:first-child) {
     margin-left: 30px;
 }
 .masters-title {
@@ -285,13 +303,11 @@ letter-spacing: 0.03em;
 /* Подвал */
 .footer {
     background-color: #2F303A;
-}
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 } 
-.adress {
-    margin-top: 20px;
+.logo.logo-footer {
+    margin-bottom: 20px;
 }
 .adress-item:not(:last-child) {
     margin-bottom: 9px;
@@ -347,7 +363,7 @@ letter-spacing: 0.03em;
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: 30px;
+    margin-bottom: -30px;
 }
 .project-link {
     text-decoration: none;
@@ -356,12 +372,12 @@ letter-spacing: 0.03em;
 
 .projects-content {
     padding-top: 20px;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    border-bottom: ;
     border-radius: 0  0 4px 4px;
-    background: #EEEEEE;
-    /* outline: 2px solid green; */
+    outline: 2px solid green;
 }
 
 .project-item {
