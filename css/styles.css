@@ -204,9 +204,12 @@ letter-spacing: 0.03em;
 
 /*Преимущества*/
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
-  }
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
