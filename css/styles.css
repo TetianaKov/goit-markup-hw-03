@@ -53,7 +53,7 @@ button {
 }
 
 .header {
-    display: flex;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container {
     display: flex;
@@ -160,7 +160,7 @@ letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
-.border: 1px solid #ECECEC;
+
 
 /*Герой*/
 .hero {
@@ -193,12 +193,13 @@ letter-spacing: 0.03em;
     letter-spacing: 0.06em;
     cursor: pointer;
     border-radius: 4px;
-    
+       
     min-width: 200px;
     min-height: 50px;
 
     padding: 10px 32px;
     justify-content: center;
+
     
 }
 
@@ -262,8 +263,11 @@ letter-spacing: 0.03em;
 
 
 /* Мастера */
-.masters {
+.section-masters {
     background-color: var(--team-background);
+}
+.masters {
+    
     display: flex;
 }
 
@@ -272,7 +276,7 @@ letter-spacing: 0.03em;
     padding-top: 30px;
 }
 .masters-item {
-    width: calc(100% / 4 - 30px);
+    width: calc((100% - 90px) / 4);
     
 }
 .masters-item:not(:first-child) {
@@ -310,6 +314,9 @@ letter-spacing: 0.03em;
     padding-bottom: 60px;
 } 
 
+footer-logo {
+    padding: 0;
+}
 .section-adress{
     margin-top: 20px;
 }
@@ -341,9 +348,6 @@ letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
 .button {
-    padding: 6px 22px;
-}
-.filter-item {
     cursor: pointer;
     font-family: inherit;
     color: var(--text-color);
@@ -351,7 +355,10 @@ letter-spacing: 0.03em;
     font-weight: 500;
     line-height: 1.63;
     text-decoration: none;
+    
+    padding: 6px 22px;
 }
+
 .filter-item + .filter-item {
     margin-left: 10px;
 }
