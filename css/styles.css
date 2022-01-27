@@ -309,8 +309,9 @@ letter-spacing: 0.03em;
     padding-top: 60px;
     padding-bottom: 60px;
 } 
-.logo.logo-footer {
-    margin-bottom: 20px;
+
+.section-adress{
+    margin-top: 20px;
 }
 .adress-item:not(:last-child) {
     margin-bottom: 9px;
