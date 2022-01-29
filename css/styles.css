@@ -104,11 +104,12 @@ letter-spacing: 0.03em;
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
 
 }
 .logo-studio {
     color: #000000;
-    margin-right: 93px;
+   
 }
 .logo-studio-footer,
 .adress-item-city{
@@ -314,7 +315,7 @@ letter-spacing: 0.03em;
     padding-bottom: 60px;
 } 
 
-footer-logo {
+.footer-logo {
     padding: 0;
 }
 .section-adress{
